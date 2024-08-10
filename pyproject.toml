@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "AIO (All in One)"
+version = "0.1.0"
+description = "A discord bot which allows servers to choose what features they want from a list of features that the bot offers."
+authors = ["astroyo"]
+license = "MIT"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "3.12.*"
+nextcord = "2.6.*"
+python-dotenv = "^1.0.1"
+colorama = "^0.4.6"
+
+[tool.poetry.dev-dependencies]
+ruff = "~0.5.0"
+pre-commit = "~3.7.1"
+
+[tool.ruff]
+# Target Python 3.12. If you decide to use a different version of Python
+# you will need to update this value.
+target-version = "py312"
+# The directory containing the source code. If you choose a different project layout
+# you will need to update this value.
+src = ["src"]
